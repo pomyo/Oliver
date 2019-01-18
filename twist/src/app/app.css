@@ -1,0 +1,141 @@
+/* ------------------- Building Blocks ------------------- */
+#root {
+  /* height: 100vh; */
+}
+
+.button-default {
+  display: inline-block;
+  flex: 1 1 auto;
+  padding: 15px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  box-shadow: -0.2rem 0.2rem 1rem 1px rgba(0,0,0,.1);
+  border-radius: 10px; 
+  font-family: 'Raleway';
+}
+
+.button-default:hover {
+  background-image: linear-gradient(to right, #30b176 0%, #30b176 70%, #30b176 100%);
+  cursor: pointer;
+}
+
+h2, h1, h3, h4, h5, p, div {
+  color: #333438;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+i {
+  color:#36c584;
+}
+
+.col {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  /* background-color: #1b1b1d; */
+}
+
+
+/* ------------------- Navigation ------------------- */ 
+.logo { 
+  margin: 0.3em;
+  width: 5rem;
+  font-size: 1.2rem;
+  color:#36c584;
+  font-family: 'Montserrat', cursive;
+}
+
+.navBar {
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.1);
+  display: -webkit-flex;
+}
+
+/* ------------------- Headline ------------------- */
+
+.headline .col {
+  width: 50%;
+  padding-top: 40px;
+  height: 300px;
+}
+
+.big-pitch {
+  margin-bottom: 10px;
+  color: #404345;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Lato";
+  letter-spacing: 2px;
+}
+
+.small-pitch {
+  margin-bottom: 10px;
+  color:#a3a4a5;
+  font-family: "Raleway";
+  font-size: 1.4rem;
+}
+
+/* #36c584  */
+/* #30af75 */
+/* #ccac00 */
+
+.btn1 {
+  margin-right: 10px;
+  margin-top: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 1rem;
+  background-image: linear-gradient(to right, #36c584 0%, #36c584 70%, #36c584 100%);
+}
+
+/* ------------------- Display Features ------------------- */
+
+.display-features .col {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card {
+  /* background-color: #1b1b1d; */
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 8px;
+  box-shadow: -0.2rem 0.2rem 1rem 1px rgba(0,0,0,.1);
+  width: 14rem;
+  height: 14rem;
+  display: inline-block;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+.card-content {
+  letter-spacing: 1px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+  grid-template-rows: 20% 40% 40%;
+  grid-template-columns: 1fr;
+}
+
+.card-title {
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: 'Lato';
+}
+
+.card-description {
+  color:#a3a4a5;
+  font-size: 1.1rem;
+  font-family: 'Raleway';
+}
