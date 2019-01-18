@@ -37,6 +37,10 @@ class Home extends React.Component {
             headline={this.state.headline}
             slogan={this.state.slogan}
           />
+          <HeadLiner
+            headline={this.state.headline}
+            slogan={this.state.slogan}
+          />
           <DisplayFeatures />
         </Container>
       </div>
