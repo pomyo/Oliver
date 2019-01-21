@@ -1,9 +1,22 @@
 import React from "react";
 
 const Nav = props => (
-    <div className="navBar">
-      <div className="logo">Oliver</div>
-    </div>
-  );
+  <div className="navbar">
+    <NavLeft />
+    {/* <NavRight /> */}
+  </div>
+);
 
-export default Nav;
+const NavLeft = props => (
+  <div className="nav-left">
+    <div className="logo">Oliver</div>
+  </div>
+);
+
+const NavRight = props => (
+  <div className="nav-right">
+    <div>Login</div>
+  </div>
+);
+
+export { Nav, NavLeft, NavRight };

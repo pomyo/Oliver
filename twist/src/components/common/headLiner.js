@@ -8,7 +8,6 @@ const HeadLiner = props => (
         <div className="big-pitch">{props.headline}</div>
         <div className="small-pitch">{props.slogan}</div>
         <Button btnClass="btn1" name="Learn More" />
-        {/* <Button btnClass="btn1" name="Login" /> */}
       </Col>
     </Row>
   );

@@ -57,10 +57,23 @@ i {
   font-family: 'Montserrat', cursive;
 }
 
-.navBar {
+.navbar {
   box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.1);
   display: -webkit-flex;
 }
+
+/* .nav-right .nav-left {
+  display: flex;
+  display: -webkit-flex;
+} */
+
+/* .nav-left {
+  float: left;
+}
+
+.nav-right {
+  float: right;
+} */
 
 /* ------------------- Headline ------------------- */
 
@@ -81,7 +94,7 @@ i {
 
 .small-pitch {
   margin-bottom: 10px;
-  color:#a3a4a5;
+  color:#707070;
   font-family: "Raleway";
   font-size: 1.4rem;
 }
@@ -135,7 +148,7 @@ i {
 }
 
 .card-description {
-  color:#a3a4a5;
+  color:#707070;
   font-size: 1.1rem;
   font-family: 'Raleway';
 }
