@@ -1,27 +1,25 @@
 import React from "react";
-import { Nav, NavLeft, NavRight } from '../common/navigation';
-import { Container, Row, Col } from 'reactstrap';
-// import './App.css';
-// import '../../styles/react-vis/style.css';
-// import { XYPlot, LineSeries, VerticalGridLines, HorizontalGridLines, XAxis, YAxis } from 'react-vis';
+import { Nav, NavLeft, NavRight } from "../common/navigation";
+import BigMoneyTag from '../common/bigMoney';
+import { Container, Row, Col } from "reactstrap";
+// import LineChart from "../common/lineChart.js";
 
 class View extends React.Component {
-    state = {
-        
-    }
+  state = {
+    
+  };
 
-    render () {
+  render() {
     return (
-        <div>
-            <Nav />
-            <Container>
-                <div>
-                    
-                </div>
-            </Container>
-        </div>
+      <div>
+        <Nav />
+        <Container>
+            Summary for January 2019
+            <BigMoneyTag />    
+        </Container>
+      </div>
     );
-    }
+  }
 }
 
 export default View;

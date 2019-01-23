@@ -47,6 +47,9 @@ i {
   /* background-color: #1b1b1d; */
 }
 
+.tagTitle {
+  font-size: 20px;
+}
 
 /* ------------------- Navigation ------------------- */ 
 .logo { 
