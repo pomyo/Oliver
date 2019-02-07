@@ -62,18 +62,21 @@ i {
   display: -webkit-flex;
 }
 
-/* .nav-right .nav-left {
-  display: flex;
-  display: -webkit-flex;
-} */
-
-/* .nav-left {
-  float: left;
+.navbar .logo {
+  display: inline-block;
 }
 
-.nav-right {
-  float: right;
+.navbar * {
+  display: inline-block;
+}
+
+/* .nav-right, .nav-left{
+  display: inline-block;
 } */
+
+/* .nav-right {
+  float: right;
+} */ */
 
 /* ------------------- Headline ------------------- */
 

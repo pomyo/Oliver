@@ -51,7 +51,7 @@ class View extends React.Component {
     });
   }
 
-  insertTransaction() {
+  insertTransaction = () => {
     let description = document.getElementById("transact-description").value;
     let category = document.getElementById("transact-category").value;
     let amount = document.getElementById("transact-amount").value;
@@ -72,7 +72,10 @@ class View extends React.Component {
       accountID: 1234
     };
 
-    OllyApi.addTransaction(transactionData).then(data => console.log(data));
+    OllyApi.addTransaction(transactionData).then(data => {
+      // console.log(this);
+      this.loadMonthlyData();
+    });
   }
 
   setActive = (event) => {
@@ -108,6 +111,22 @@ class View extends React.Component {
         </Row>
 
         <Row>
+
+          <select id='transact-category' >
+            <option>Income</option>
+            <option>Expense</option>
+            <option>Savings</option>
+          </select>
+
+          <input id='transact-description' type="text" placeholder="Description"/>
+          <input id='transact-amount' type="number" placeholder="Amount"/>
+
+          <button onClick={this.insertTransaction}>Submit</button>
+
+        </Row>  
+
+
+        <Row>
           <MoneyCard setActive={this.setActive} title="Expense" amount={"$" + this.state.expense.sum} />
           <MoneyCard setActive={this.setActive} title="Income" amount={"$" + this.state.income.sum} />
           <MoneyCard setActive={this.setActive} title="Savings" amount={"$" + this.state.savings.sum} />
@@ -125,22 +144,7 @@ class View extends React.Component {
             /> */}
           </Container>
         </Row>
-      </Container>
-
-      // <Row>
-
-      //       <select id='transact-category' >
-      //         <option>Income</option>
-      //         <option>Expense</option>
-      //         <option>Savings</option>
-      //       </select>
-
-      //       <input id='transact-description' type="text" placeholder="Description"/>
-      //       <input id='transact-amount' type="number" placeholder="Amount"/>
-
-      //       <button onClick={this.insertTransaction}>Submit</button>
-
-      //     </Row>   
+      </Container> 
     );
   }
 }
