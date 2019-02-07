@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from './input';
 import { Row, Col } from 'reactstrap';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import View from '../pages/view';
 
 const view = () => (

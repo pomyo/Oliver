@@ -2,9 +2,6 @@ const oliverDB = require('../models/Index.js');
 
 module.exports = function (app) {
   app.get('/api/getDataOfMonth/:month/:year', function (req, res) {
-    console.log("Hitting the /api/getDataOfMonth api route");
-    console.log("Fetching data for the month of: " + req.params.month);
-    console.log("Fetching data for the year of: " + req.params.year);
     oliverDB.Transaction.find(
       {
         monthName: req.params.month, 

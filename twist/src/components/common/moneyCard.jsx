@@ -7,10 +7,10 @@ import { Col } from "reactstrap";
 
 const MoneyCard = props => (
     <Col>
-      <div className='moneyCard' onClick={props.onClick}>
-        <h1 className="moneyCard-title">{props.title}</h1>
-        <h5 className="moneyCard-amount">{props.amount}</h5>
-        </div>
+      <div className='moneyCard' onClick={props.setActive} name={props.title.toLowerCase()}>
+        <h1 className="moneyCard-title" name={props.title.toLowerCase()}>{props.title}</h1>
+        <h5 className="moneyCard-amount" name={props.title.toLowerCase()}>{props.amount}</h5>
+      </div>
     </Col>
 );
 

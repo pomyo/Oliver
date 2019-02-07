@@ -9,24 +9,29 @@ const dayOfYear = d => {
 };
 
 const getCurrentMonth = () => {
-  let today = new Date();
-  return today.toLocaleString("en-us", { month: "long" });
+  return new Date().toLocaleString("en-us", { month: "long" });
 };
 
 const getCurrentYear = () => {
-  let today = new Date();
-  return today.getFullYear();
+  return new Date().getFullYear();
 };
 
 const getCurrentMonthYear = () => {
   return getCurrentMonth() + " " + getCurrentYear();
 };
 
+const getShortDate = (dateString) => {
+  let date = new Date(dateString);
+  let shortMonth = date.toLocaleString("en-us", { month: "long" }).substring(0, 3);
+  return shortMonth + "-" + date.getDate();
+}
+
 const api = {
   dayOfYear: dayOfYear,
   getCurrentMonth: getCurrentMonth,
   getCurrentYear: getCurrentYear,
-  getCurrentMonthYear: getCurrentMonthYear
+  getCurrentMonthYear: getCurrentMonthYear,
+  getShortDate: getShortDate
 };
 
 export default api;
