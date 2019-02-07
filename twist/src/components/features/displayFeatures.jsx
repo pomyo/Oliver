@@ -1,11 +1,9 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import {  Row } from "reactstrap";
 import Card from "../common/card";
 
 const DisplayFeatures = props => (
   <Row className="display-features">
-    <Col>
-
       <Card
         iconClass="far fa-money-bill-alt fa-2x"
         title="Keep More Of Your Money"
@@ -23,8 +21,6 @@ const DisplayFeatures = props => (
         title="See Everything In One Place"
         description="No more switching between applications or banks."
       />
-
-    </Col>
   </Row>
 );
 

@@ -26,7 +26,7 @@ h2, h1, h3, h4, h5, p, div {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 1rem;
 }
 
 p {
@@ -41,12 +41,12 @@ i {
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
+  /* border: 1px solid black; */
 }
 
 .row {
-  /* background-color: #1b1b1d; */
+  /* border: none !important; */
 }
-
 
 /* ------------------- Navigation ------------------- */ 
 .logo { 
@@ -57,10 +57,23 @@ i {
   font-family: 'Montserrat', cursive;
 }
 
-.navBar {
+.navbar {
   box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.1);
   display: -webkit-flex;
 }
+
+/* .nav-right .nav-left {
+  display: flex;
+  display: -webkit-flex;
+} */
+
+/* .nav-left {
+  float: left;
+}
+
+.nav-right {
+  float: right;
+} */
 
 /* ------------------- Headline ------------------- */
 
@@ -81,7 +94,7 @@ i {
 
 .small-pitch {
   margin-bottom: 10px;
-  color:#a3a4a5;
+  color:#707070;
   font-family: "Raleway";
   font-size: 1.4rem;
 }
@@ -111,11 +124,11 @@ i {
   border: 1px solid rgba(0,0,0,.1);
   border-radius: 8px;
   box-shadow: -0.2rem 0.2rem 1rem 1px rgba(0,0,0,.1);
-  width: 14rem;
-  height: 14rem;
-  display: inline-block;
+  /* width: 14rem; */
+  /* height: 14rem; */
+  /* display: inline-block; */
   padding: 1rem;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
 }
 
 .card-content {
@@ -135,7 +148,76 @@ i {
 }
 
 .card-description {
-  color:#a3a4a5;
-  font-size: 1.1rem;
+  color:#707070;
+  font-size: 1rem;
   font-family: 'Raleway';
+}
+
+/* ------------------- Money Card ------------------- */
+
+.moneyCard {
+  text-align: center;
+  padding: 1rem;
+
+  border-radius: 8px;
+  box-shadow: -0.2rem 0.2rem 1rem 1px rgba(0,0,0,.1);
+  border: 1px solid rgba(0,0,0,.1);
+  /* border: 1px solid black; */
+}
+
+.moneyCard:hover {
+  background-color:  darkgreen;
+  color: white;
+  cursor: pointer;
+}
+
+/* .moneyCard:hover .moneyCard-amount{
+  background-color:  darkgreen;
+  color: #36c584;
+  cursor: pointer;
+} */
+
+.moneyCard-title {
+  font-family: "Lato";
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.moneyCard-amount {
+  color:#36c584;
+  font-size: 1.6rem;
+  font-family: 'Raleway';
+}
+
+.sum-head-line {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-family: 'Lato';
+}
+
+.border {
+  border: 1px solid black;
+  
+}
+
+.transaction-row {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 1fr 1fr;
+}
+
+.trans-amount {
+  color: #30b176;
+  display: grid;
+  font-size: 1.4rem;
+  grid-row: span 2;
+  justify-content: center;
+  align-content: center; 
+}
+
+.trans-description, .trans-date {
+  padding-left: 1rem;
 }
