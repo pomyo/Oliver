@@ -1,9 +1,10 @@
 import React from "react";
-import { Button } from '../common/input';
-import { Container, Row, Col } from 'reactstrap';
-import HeadLiner from '../common/headLiner';
-import DisplayFeatures from '../features/displayFeatures';
-import { Nav, NavLeft, NavRight } from '../common/navigation';
+// import { Button } from '../common/input.jsx';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { Container } from 'reactstrap';
+import HeadLiner from '../common/headLiner.jsx';
+import DisplayFeatures from '../features/displayFeatures.jsx';
+import { Nav } from '../common/navigation.jsx';
 
 class Home extends React.Component {
   state = {
@@ -22,13 +23,12 @@ class Home extends React.Component {
 
   render () {
     return (
-      <div>
-        <Nav />
         <Container>
-          <HeadLiner headline={this.state.headline} slogan={this.state.slogan}/>
+          <HeadLiner 
+            headline={this.state.headline} 
+            slogan={this.state.slogan}/>
           <DisplayFeatures />
         </Container>
-      </div>
     );
   }
 }

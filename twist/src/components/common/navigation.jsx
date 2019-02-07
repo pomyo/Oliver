@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const Nav = props => (
   <div className="navbar">
@@ -10,6 +11,8 @@ const Nav = props => (
 const NavLeft = props => (
   <div className="nav-left">
     <div className="logo">Oliver</div>
+    <Link to="/home"><div>Home</div></Link>
+    {/* <Link to="/view"><div>View</div></Link> */}
   </div>
 );
 

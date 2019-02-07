@@ -1,23 +1,31 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const TransactionSchema = new Schema({
-    date: {
-        type: Date,
-        required: "This transaction must include a date"
-    },
+const TransactionSchema = new Schema ({
+    date: Date,
+    
+    millSecTime: Number,
+
+    month: Number,
+
+    monthName: String,
+
+    dayOfYear: Number,
+
+    dayOfMonth: Number,
+
+    dayOfWeek: String,
+
+    year: Number,
 
     amount: {
         type: Number,
         required: "Must include an amount in this transaction"
     },
 
-    for: {
-        type: String,
-        required: "Must include the target of this transaction"
-    },
+    description: String, //from bank of america, groceries, etc.
 
-    category: String,
+    category: String, //savings, income, expense
     accountID: String
 });
 
